@@ -1,16 +1,60 @@
-# React + Vite
+ React User Management App using Context API
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Project Description
+This is a React application that demonstrates user authentication and state management using the Context API.  
+The project includes Signup, Login, Dashboard, Profile, and Contact Us pages.
 
-Currently, two official plugins are available:
+The Contact Us page auto-fills user details using Context API and stores feedback in localStorage.  
+Access to protected pages is restricted to authenticated users.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+\Features
+- User Signup & Login
+- Context API for global user state
+- Protected Routes
+- Auto-filled user details (Name & Email)
+- Feedback submission with localStorage
+- Responsive UI using Tailwind CSS
+- Logout functionality
 
-## React Compiler
+Concepts Used
+- React Hooks (useState, useContext)
+- Context API
+- React Router DOM
+- Protected Routes
+- localStorage
+- Tailwind CSS
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Technologies Used
+- React.js
+- Vite
+- JavaScript
+- Tailwind CSS
+- HTML & CSS
 
-## Expanding the ESLint configuration
+Pages Included
+- Signup
+- Login
+- Dashboard
+- Profile
+- Contact Us (Protected)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Contact Us Page Features
+- Auto-filled Name (read-only)
+- Auto-filled Email (read-only)
+- Feedback textbox
+- Submit feedback
+- Feedback stored in localStorage with timestamp
+
+Feedback Storage Format
+{
+  "name": "Pankaja",
+  "email": "pankajapoojari@gmail.com",
+  "feedbackText": "Very good application",
+  "submittedAt": "2025-12-14T08:30:00Z"
+}
+
+How to Run the Project Locally
+npm install
+npm run dev
+Open in browser:
+http://localhost:5174
